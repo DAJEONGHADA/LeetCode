@@ -1,6 +1,9 @@
 class Solution:
     def generateTheString(self, n: int) -> str:
+        answer = ""
         if n % 2 == 1:
-            return 'p' * n
+            answer = 'p' * n
         else:
-            return 'p' * (n - 1) + 'z' 
+            answer = 'p' * (n - 1) + 'z'
+            
+        return answer
